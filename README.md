@@ -28,10 +28,20 @@ ML Memovault is a Flask-based web application that provides sentiment analysis c
 - **Request Body:**
   ```json
   {
-    "text": "Your text for sentiment analysis"
+    "text":"I am sad"
   }
   ```
 - **Response:** Returns sentiment analysis results
+  ```json
+  {
+    "text": [
+        {
+            "label": "NEGATIVE",
+            "score": 0.9991856217384338
+        }
+    ]
+  }
+  ```
 
 ## Installation
 
